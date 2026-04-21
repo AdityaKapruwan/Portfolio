@@ -3,58 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Aditya Kapruwan | Web Developer & Gamer</title>
     <link rel="stylesheet" href="website.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="light-mode">
+    <!-- Dark mode toggle -->
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></span>
+        </label>
+    </div>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-gamepad"></i> Aditya
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section id="about">
-        <h1>About Me</h1>
-        <p>Hi, I'm Aditya , a passionate gamer. I love working on web development and creating innovative solutions.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of the project.</p>
-            <a href="#" target="_blank">View Project</a>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Aditya Kapruwan</span></h1>
+                <p class="hero-subtitle">Passionate Web Developer & Gamer creating innovative digital experiences</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-pic">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of the project.</p>
-            <a href="#" target="_blank">View Project</a>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi! I'm Aditya, a passionate gamer and web developer who loves turning ideas into interactive web experiences. From crafting pixel-perfect UIs to building full-stack applications, I thrive on solving problems with code.</p>
+                    <p>When I'm not coding, you'll find me gaming, exploring new tech, or designing game-inspired websites. Let's create something awesome together!</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="counter" data-target="50" data-suffix="+">0</span>
+                            <span>Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="counter" data-target="2" data-suffix="Y">0</span>
+                            <span>Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="counter" data-target="100" data-suffix="%">0</span>
+                            <span>Passion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Python</li>
-        </ul>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Todo App</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Advanced Todo App</h3>
+                        <p>Full-featured todo application with user authentication, task management, and real-time updates using Node.js and React.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Chat App</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-time Chat Application</h3>
+                        <p>Multi-user chat app with Socket.io, group chats, message history, and responsive design for seamless communication.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">E-commerce</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with user authentication, product management, cart functionality, and payment integration.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out via email: <a href="mailto:youremail@example.com">aditya@gmail.com</a></p>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span>HTML/CSS</span>
+                            <div class="bar" data-width="95%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>JavaScript</span>
+                            <div class="bar" data-width="90%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>React</span>
+                            <div class="bar" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span>Node.js</span>
+                            <div class="bar" data-width="80%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>Python</span>
+                            <div class="bar" data-width="75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-icons">
+                        <i class="fab fa-git-alt" title="Git"></i>
+                        <i class="fab fa-github" title="GitHub"></i>
+                        <i class="fas fa-database" title="Database"></i>
+                        <i class="fab fa-sass" title="Sass"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">Have a project in mind? Let's talk!</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>aditya@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <p>github.com/adityakapruwan</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <p>linkedin.com/in/adityakapruwan</p>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Aditya Kapruwan. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Aditya Kapruwan. Built with passion. <i class="fas fa-heart"></i></p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
